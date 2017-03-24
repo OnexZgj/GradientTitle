@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.esint.demo.titlechange.ScrollViewContainer
+        android:id="@+id/scrollviewContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.esint.demo.titlechange.GradationScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/banner3" />
+
+                    <com.esint.demo.titlechange.NoScrollListview
+                        android:id="@+id/listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+        </com.esint.demo.titlechange.GradationScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="我是第一条数据" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="我是第一条数据" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="我是第一条数据" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="我是第一条数据" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="我是第一条数据" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="我是第一条数据" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:text="我是第一条数据" />
+            </LinearLayout>
+
+        </ScrollView>
+
+    </com.esint.demo.titlechange.ScrollViewContainer>
+
+    <TextView
+        android:id="@+id/textview_xx"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="我是标题"
+        android:textColor="@color/transparent"
+        android:fitsSystemWindows="true"
+        android:clipToPadding="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.esint.demo.titlechange.GradationScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/viewPager"
+                />
+
+            <com.esint.demo.titlechange.NoScrollListview
+                android:id="@+id/listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.esint.demo.titlechange.NoScrollListview>
+        </LinearLayout>
+    </com.esint.demo.titlechange.GradationScrollView>
+
+    <TextView
+        android:paddingBottom="10dp"
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center|bottom"
+        android:text="我是标题"
+        android:textSize="18sp"
+        android:textColor="@color/transparent"
+        android:background="@color/transparent" />
+
+
+
+</RelativeLayout>
